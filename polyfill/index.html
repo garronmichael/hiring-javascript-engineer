@@ -17,5 +17,18 @@
         <li>No jQuery or any other 3rd party libs.</li>
         <li>Works for dynamically added input elements.</li>
     </ul>
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+      var form = document.getElementsByTagName('form')[0];
+      form.addEventListener('focusout', function(event) {
+        var result = confirm('Are you sure you want to write ' + event.target.value + '?');
+        if(!result) {
+          event.target.value = '';
+        } else {
+          return;
+        }
+      });
+  });
+</script>
 </body>
 </html>
