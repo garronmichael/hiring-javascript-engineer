@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Mocha Spec Runner</title>
+  <link rel="stylesheet" href="testLib/mocha/mocha.css">
+  <script src="testLib/jquery.js"></script>
+  <script src="testLib/mocha/mocha.js"></script>
+  <script src="testLib/chai/chai.js"></script>
+  <script src="testLib/sinon/sinon.js"></script>
+  <script>
+    mocha.setup('bdd');
+    window.expect = chai.expect;
+    $(function() {
+      window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
+    });
+  </script>
+  <script src="robots.js"></script>
+  <script src="spec.js"></script>
+</head>
+<body>
+<div id="mocha"></div>
+</body>
+</html>

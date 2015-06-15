@@ -1,0 +1,78 @@
+body {
+  font-family: 'Helvetica Nueue', Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.robotScene {
+  height: 600px;
+  width: 1400px;
+  background: no-repeat url('images/livingRoom.jpg');
+  position: relative;
+  overflow: hidden: ;
+}
+
+.buttonBar {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.robotButton {
+  text-align: center;
+  font-size: 30px;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  border: none;
+  background: #bfb;
+  margin: 20px 0 0 20px;
+  opacity: .85;
+}
+
+.rosie {
+  background-image: url('images/rosie.gif');
+  height: 275px;
+  width: 182px;
+  display: inline-block;
+  position: absolute;
+}
+
+.bender {
+  background-image: url('images/bender.gif');
+  height: 350px;
+  width: 250px;
+  display: inline-block;
+  position: absolute;
+}
+
+.gir {
+  background-image: url('images/gir.gif');
+  height: 90px;
+  width: 75px;
+  display: inline-block;
+  position: absolute;
+}
+
+.messButton {
+  display: none;
+}
+
+.cleanButton {
+  display: none;
+}
+
+.helloButton {
+  display: none;
+}
+
+.hello {
+  top: 200px;
+  left: 150px;
+  font-size: 100px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 20px 20px 20px 1px;
+  background: #fff;
+  text-align: center;
+  position: absolute;
+}
